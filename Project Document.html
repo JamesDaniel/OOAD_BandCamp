@@ -12,6 +12,7 @@
 	<hr>
 	<h3>Use Cases</h3>
 	<ul>
+		<li style="color:green;">Create Account</li>
 		<li style="color:green;">log on</li>
 		<li style="color:green;">log off</li>
 		<li style="color:green;">upload song</li>
@@ -59,6 +60,46 @@
 		<li>do the domain model(is this UML/code???)</li>
 		<li>Show a change a client might want in the system and how the code changes.</li>
 	</ul>
+	
+1.1 Create Account
+The user creates a new account by visiting the website, clicking on the Sign up button and providing their 
+information. 
+
+1.2 Log on
+The user logs onto their account by providing their  username and password. If the user has forgotten either
+there is a process which they can go through to set a new one.
+
+1.3 Log off
+The user logs off by clicking on the Log Off link.
+
+1.4 Upload Song
+The user wants to upload a song. They have already logged on. The user clicks on Add Song and is bought to 
+a page where the details of the song can be entered. The User provides a link to the song, provides a name
+and adds any tags which are appropriate. The user then clicks "Upload". The song is now visible on the users
+page, can be searched for and can be listened to by other users.
+
+The things that could go wrong are:
+    The user does not provide all the information required
+	The user provides a name for the song that already exists.
+	
+	
+1.5 Listen to Song
+The user wants to listen to a song. The user has already logged on and the song already exists in the database.
+
+The user clicks on search and types in the name of the song they want to listen to. A list of all songs of this
+title will be returned. The user clicks on the one they want to listen to and are bought to that songs page. The
+user can click on the play button to begin playing it or the stop button to stop the song.
+
+The user clicks on search and types in the tags for the song they want to listen to. A list of all songs containing
+these tags will be returned. The user clicks on the song they want to listen to and are bought to that songs page. The
+user can click on the play button to begin playing it or the stop button to stop the song.
+
+The user clicks on the page of the user who uploaded the song they want to listen to. They click on "Uploaded Songs"
+and click on the song that they want to listen to.
+
+The things that could go wrong are:
+    The song the user searches for does not exists.
+	No songs are returned with the tags that the user has included.
 
   </body>
 </html>
