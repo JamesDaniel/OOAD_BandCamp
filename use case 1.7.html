@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+  </head>
+  <body>
+	<h3 id="comment">1.7 Make a comment</h3>
+	<p>
+	An user wants to make a comment on a song/event. The user has already logged into the system, the song/event already exists in the the database, selected a song/event, and the user has the read & write rights to the song/event.
+	</p>
+	<p><strong>Possible scenarios:</strong></p>
+	<ol type="a">
+		<li>
+		The user searches a song by name they want to comment. A list of all the songs of this title will be returned. The user clicks on the one they want to comment to and are brought to that songs page.
+		</li>
+		<li>
+		The user searches a song by a tag name they want to comment. A list of all the songs containing these tags will be returned. The user clicks on the song they want to comment to and are bought to that songs page. The user enters comment and clicks on the comment button to submit it.
+		</li>
+		<li>
+		The user clicks on the page of the user who uploaded the song they want to comment to. He/She clicks on "Uploaded Songs" and click on the song that they want to comment to.
+		</li>
+	</ol>
+	<p><strong>For each scenarios:</strong></p>
+	<p>
+	The user enters comment and clicks on the comment button to submit it. A user can "hashtag" another user by writing '@' followed by an user name in the comment. The system records the users comment, displays it on the UI and notifies the song uploader. If another user were tagged, they are also notified.
+	</p>
+	<p>
+	<strong>The things that could go wrong are:</strong>
+	</p>
+	<ol type="i">
+		<li>
+		The song the user searches for does not exists, in which case the user exits;
+		</li>
+		<li>
+		No songs are returned with the tags that the user has included, in which case the user exits;
+		</li>
+		<li>
+		There is an error in writing to the database, in which case the system informs the user with this, with a notice that to contact Technical Support.
+		</li>
+	</ol>
+	
+	              
+  </body>
+</html>
