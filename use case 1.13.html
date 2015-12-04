@@ -5,20 +5,39 @@
     <meta charset='utf-8'>
   </head>
   <body>
-	<h3>1.13 Search For Music</h3>
-	<p><strong>Actors:</strong> Registered User, Music System</p>
+  
+  
+	<h3>Bandcamp Use Case 1.13: Search For Music</h3>
+	<p><strong>Actors:</strong> Member</p>
 	<p><strong>Scope:</strong> A social music sharing system</p>
 	<p><strong>Level:</strong> User goal</p>
-	<p><strong>Description:</strong> After a registered user logs in, they type in the name of 
-	a song they wish to look for into the search bar. As the user types the system presents a few 
-	results as hints below the search bar. Each hint will have an icon that will show the user what 
-	the search result relates to for example songs, registered users or comments. The user may select 
-	a hint or continue typing. When the user has finished typing or selects a hint and hits [Enter], 
-	they will be directed to a page of results. </p>
-	<p>The results page will list each song that contains the search text in its title, genre, 
-	description, or in its comments. If the registered user is taken to this results page as a 
-	result of clicking on one of the hints, the song related to that hint will be shown as the 
-	first result.</p>
+	<p><strong>Precondition:</strong> Member is logged into system</p>
+	<p><strong>Post-condition:</strong> Returns matching results</p>
+  
+  <p><strong>Main Success Scenario:<br>Steps:</strong></p>
+  <ol><li>Member types song title into search bar.    </li>
+      <li>Member submits search.                      </li>           
+      <li>System looks for matching song titles.      </li>           
+      <li>All found matches are displayed to member.  </li></ol>
+      
+  
+  <p><strong>Alternative Scenarios:<br>Steps:</strong></p>
+  <ul style="list-style-type:none;">
+  
+              <li>4a1. Member types song title into search bar.    </li>
+              <li>4a2. Member submits search.                      </li></ul>               
+  
+	<p><strong>Priority:</strong> High</p>
+	<p><strong>Frequency of Use:</strong> High</p>
+	<p><strong>Open Issues:</strong><br>
+     
+Will the system display results if the member enters 1 character only?<br>
+Will the system check for special characters?                         <br>
+Will the system search for music event?                               <br>
+Will the system search for users?                                     <br>
+Could unregistered user be allowed to search?
+  
+  </p>
   
   </body>
 </html>
