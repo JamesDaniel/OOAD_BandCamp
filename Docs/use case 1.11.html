@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+  </head>
+  <body>
+	<h3>1.11 Populate Member Home Page with Top 20 Tags</h3>
+
+	<p>Top 20 Tags</p>
+
+	<p><strong>Primary Actor:</strong> Member, System</p>
+	
+	<p><strong>Level:</strong> Subfunction</p>
+
+	<p><strong>Precondition:</strong>  Member is logged in. Member has rated multiple songs</p>
+	
+	<p><strong>Main Success Scenario</strong></p>
+
+	<p>Profile owner has given a ‘Yah’ rating to many songs.</p>
+	
+	<ol>
+		<li>
+		Member visits a profile page (their own or someone else’s)
+		</li>
+		
+		<li>
+		The system counts up the total for every tag that is used in songs that profile owner has rated.
+		</li>
+		
+		<li>
+		The top 20 most popular tags are displayed beside that profile owner’s name and profile image.
+		</li>
+	</ol>
+	
+	<p><strong>Alternate Scenario</strong></p>
+	<p>Profile owner has not rated any songs</p>
+	<ol>	
+		<li>
+		The system finds no song ratings given by the profile owner.
+		</li>
+		
+		<li>
+		Profile name and Image is displayed but no song tags are displayed on the profile page.
+		</li>
+	</ol>
+	
+	<p><strong>Alternate Scenario</strong></p>
+
+	<p>Profile has more than one, less than twenty song tags</p>
+	<ol>
+		<li>		
+		The system finds less than 20 song tags associated with songs the profile owner has given a ‘Yah’ rating to.
+		</li>
+		<li>
+		Profile name and Image is displayed with only the tags available.
+		</li>
+	</ol>
+	<p><strong>Post condition</strong></p>
+
+	<p>
+	As the member gives more ‘Yah’ ratings to more songs, the top 20 tags are continually recalculated.
+	</p>
+	<hr>    
+  </body>
+</html>
