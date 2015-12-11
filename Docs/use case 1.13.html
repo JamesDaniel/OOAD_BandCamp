@@ -9,23 +9,24 @@
   
 	<h3>Bandcamp Use Case 1.13: Search For Music</h3>
 	<p><strong>Actors:</strong> Member</p>
-	<p><strong>Scope:</strong> A social music sharing system</p>
+	<p><strong>Scope:</strong> The overall search process utilised by a member</p>
 	<p><strong>Level:</strong> User goal</p>
 	<p><strong>Precondition:</strong> Member is logged into system</p>
-	<p><strong>Post-condition:</strong> Returns matching results</p>
+	<p><strong>Post-condition:</strong> Returns matching results or notifies member none were found</p>
   
   <p><strong>Main Success Scenario:<br>Steps:</strong></p>
-  <ol><li>Member types song title into search bar.    </li>
-      <li>Member submits search.                      </li>           
-      <li>System looks for matching song titles.      </li>           
-      <li>All found matches are displayed to member.  </li></ol>
+  <ol><li>Member types song title into search function.       </li>
+      <li>Member submits search.                              </li>           
+      <li>System looks for matching song title.               </li>           
+      <li>First matching song details are displayed to member.</li></ol>
       
   
   <p><strong>Alternative Scenarios:<br>Steps:</strong></p>
   <ul style="list-style-type:none;">
   
-              <li>4a1. Member types song title into search bar.    </li>
-              <li>4a2. Member submits search.                      </li></ul>               
+              <li>4a1. No match is found                                      </li>
+              <li>4a2. Message informing user no match was found is displayed.</li>
+			  <li>4a3. Back to step 1.</li></ul>               
   
 	<p><strong>Priority:</strong> High</p>
 	<p><strong>Frequency of Use:</strong> High</p>
