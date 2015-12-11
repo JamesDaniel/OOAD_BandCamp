@@ -7,18 +7,18 @@
   <body>
   
   
-	<h3>Bandcamp Use Case 1.13: Search For Music</h3>
+	<h3>Bandcamp Use Case 1.13: Search For all Songs with Matching Title or Matching Artist</h3>
 	<p><strong>Actors:</strong> Member</p>
 	<p><strong>Scope:</strong> The overall search process utilised by a member</p>
 	<p><strong>Level:</strong> User goal</p>
 	<p><strong>Precondition:</strong> Member is logged into system</p>
-	<p><strong>Post-condition:</strong> Returns matching result or notifies member none were found</p>
+	<p><strong>Post-condition:</strong> Returns matching results or notifies member none were found</p>
   
   <p><strong>Main Success Scenario:<br>Steps:</strong></p>
-  <ol><li>Member types song title into search function.       </li>
+  <ol><li>Member types song title or Artist name into search function.       </li>
       <li>Member submits search.                              </li>           
-      <li>System looks for matching song title.               </li>           
-      <li>First matching song details are displayed to member.</li></ol>
+      <li>System looks for songs matching criteria.               </li>           
+      <li>All matching songs are displayed to member.</li></ol>
       
   
   <p><strong>Alternative Scenarios:<br>Steps:</strong></p>
@@ -32,11 +32,16 @@
 	<p><strong>Frequency of Use:</strong> High</p>
 	<p><strong>Open Issues:</strong><br>
      
-Will the system display results if the member enters 1 character only?<br>
-Will the system check for special characters?                         <br>
-Will the system search for music event?                               <br>
-Will the system search for users?                                     <br>
-Could unregistered user be allowed to search?
+	<p>Textual Analysis<p>
+	 <ul style="list-style-type:none;">
+  
+            <li>Artist (this is a role a member can perform)                                     </li>
+            <li>Title - This should have been included in first iteration. It was decided this would not 
+			be made a class but rather an attribute of song.</li>
+			<li>Song</li>
+			<li>Member</li>
+			<li>Name - This should have been included in first iteration. It was decided this would not 
+			be made a class but rather an attribute of member</li></ul>               
   
   </p>
   
