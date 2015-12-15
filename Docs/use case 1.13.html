@@ -7,7 +7,7 @@
   <body>
   
   
-	<h3>Bandcamp Use Case 1.13: Search For all Songs with Matching Title or Matching Artist</h3>
+	<h3>Bandcamp Use Case 1.13: Search For all Songs with Matching Title or Matching Artist or Genre</h3>
 	<p><strong>Actors:</strong> Member</p>
 	<p><strong>Scope:</strong> The overall search process utilised by a member</p>
 	<p><strong>Level:</strong> User goal</p>
@@ -15,10 +15,10 @@
 	<p><strong>Post-condition:</strong> Returns matching results or notifies member none were found</p>
   
   <p><strong>Main Success Scenario:<br>Steps:</strong></p>
-  <ol><li>Member types song title or Artist name into search function.       </li>
+  <ol><li>Member types song title or Artist name or genre into search function.       </li>
       <li>Member submits search.                              </li>           
       <li>System looks for songs matching criteria.               </li>           
-      <li>Matching song and artist is displayed to member.</li></ol>
+      <li>All matching songs, their artists and genres are displayed to member.</li></ol>
       
   
   <p><strong>Alternative Scenarios:<br>Steps:</strong></p>
@@ -26,7 +26,7 @@
   
               <li>4a1. No match is found                                      </li>
               <li>4a2. Message informing user no match was found is displayed.</li>
-			  <li>4a3. Back to step 1.</li></ul>               
+  </ul>
   
 	<p><strong>Priority:</strong> High</p>
 	<p><strong>Frequency of Use:</strong> High</p>
@@ -40,6 +40,8 @@
 			be made a class but rather an attribute of song.</li>
 			<li>Song</li>
 			<li>Member</li>
+			<li>Title</li>
+			<li>Genre</li>
 			<li>Name - This should have been included in first iteration. It was decided this would not 
 			be made a class but rather an attribute of member</li></ul>               
   
